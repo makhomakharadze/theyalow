@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Lucida';    
+    src: url(./assets/LucidaSansItalic.ttf);
+}
+   
+@font-face {
+    font-family: 'Segoe WP';    
+    src: url(./assets/SegoeWPLight.ttf);
+}
+
+@font-face {
+    font-family: 'Asap';    
+    src: url(./assets/Asap-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Segoe UI light';    
+    src: url(./assets/segoeuil.ttf);
+}
+
+@font-face {
+    font-family: 'PT Sans';    
+    src: url(./assets/PTSans-Regular.ttf);
+}
+
+.container-1 {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    height: 566px;
+    background-image: url("./assets/bg1.svg");
+}
+
+header {
+    display: flex;
+    width: 1300px;
+    height: 140px;
+}
+
+.logo-and-text{
+    position: absolute;    
+    display: flex;
+    left: 139px;
+    top: 27px;
+    width: 318px;
+    height: 84px;
+    opacity: 1;
+    align-items: center;    
+}
+
+.logo-back {
+    cursor: pointer;
+    left: 139px;
+    top: 27px;
+    opacity: 1;
+
+}
+
+.logo-front {
+    left: -2px;
+    top: 1px;
+    opacity: 1;
+    position: absolute;
+    cursor: pointer;
+}
+
+.logo-text {
+    cursor: pointer;
+    margin-left: 7px;
+    font-family: 'Lucida';
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 41px;
+    font-weight: lighter;
+    
+}
+
+.rec3 {
+    left: 698px;
+    top: 62px;
+    opacity: 0.27058823529411763px;
+    fill: #F5C506;
+    position: absolute;
+}
+
+.rec2 {
+    left: 702px;
+    top: 65px;
+    opacity: 0.27058823529411763px;
+    fill: #F5C506;
+    position: absolute;
+}
+
+.rec1 {
+    left: 706px;
+    top: 70px;
+    opacity: 1;
+    fill: #F5C506;
+    position: absolute;
+}
+
+nav ul {
+    left: 706px;
+    top: 70px;
+    width: 454px;
+    height: 42px;
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    
+}
+
+nav ul li {
+    left: 776px;
+    top: 85px;
+    width: 131px;
+    height: 24px;
+    text-align: center;    
+    align-items: center;
+    justify-content: space-around;    
+    display: flex;    
+}
+
+nav ul li h6 {
+    opacity: 1;
+    color: #9B7D08;
+    font-family: 'segoe wp';
+    font-size: 17px;
+    text-transform: uppercase;   
+    margin-left: 12px; 
+}
+
+nav ul li h6:hover {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.layer {
+    opacity: 0.10196078431372549;
+    width: 1px;
+    margin-left: auto;    
+}
+
+video {
+    position: absolute;
+    width: 550px;
+    height: 328px;
+    left: 150px;
+    top: 168px;
+}
+
+video[poster] {
+    object-fit: fill;
+}
+
+.play-circle  {
+    position: absolute;
+    left: 390px;
+    top: 297px;
+    opacity: 0.7215686274509804;    
+}
+
+.play {
+    position: absolute;
+    left: 417px;
+    top: 314px;
+    opacity: 1;
+}
+
+.play-rec {
+    position: absolute;
+    left: 179px;
+    top: 446px;
+    opacity: 0.3686274509803922;
+}
+
+.play-2 {
+    position: absolute;
+    left: 188px;
+    top: 450px;
+    opacity: 0.3686274509803922;
+}
+
+.progress {
+    position: absolute;
+    left: 229px;
+    top: 453px;
+    opacity: 1;
+}
+
+.progress-filled {
+    position: absolute;
+    left: 230px;
+    top: 454px;
+    opacity: 1;
+    width: 145px;
+    height: 12px;
+    border-radius: 4px;
+}
+
+.volume {
+    position: absolute;
+    left: 657px;
+    top: 451px;
+    opacity: 1;
+}
+
+.main-title {
+    position: absolute;
+    left: 750px;
+    top: 258px;
+    width: 392px;
+    height: 121px;
+    opacity: 1;
+    color: #F5C506;
+    font-family: 'asap';
+    font-size: 63px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+h1 span {
+    color: white;
+}
+
+.left-control {
+    position: absolute;
+    left: 0;
+    top:  299px;
+    opacity: 0.7098039215686275;
+}
+
+.left-control:hover {
+    opacity: 1;
+}
+
+.right-control {
+    position: absolute;
+    left: 1267px;
+    top:  299px;
+    opacity: 1;
+}
+
+.right-control:hover {
+    opacity: 0.7098039215686275;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 7px;
+    top:  318px;
+    opacity: 1;
+}
+
+.right-arrow {
+    position: absolute;
+    left: 1278px;
+    top:  318px;
+    opacity: 1;
+}
+
+.container-2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    height: 212px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/mid-bar-bg.svg);
+    box-shadow: 0 -6px 5px -5px #333;    
+    position: relative;
+}
+
+
+.box-1{
+    border-left: 1px solid lightgray;
+    width: 27%;
+    height: 100%;
+    position: relative;
+
+}
+
+.box-2{
+    border-left: 1px solid lightgray;
+    width: 27%;
+    height: 100%;
+    position: relative;
+ 
+}
+
+.box-3{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    width: 27%;
+    height: 100%;
+    position: relative;
+
+}
+
+.box-1 h5 {
+    color: #000000;
+    font-family: 'Segoe UI light';
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 27px;
+    left: 83px;
+    position: absolute;
+    width: auto;
+    top: 140px;
+    
+}
+
+.box-2 h5 {
+    color: #000000;
+    font-family: 'Segoe UI light';
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 27px;
+    left: 102px;
+    position: absolute;
+    width: auto;
+    top: 140px;
+
+}
+
+.box-3 h5 {
+    color: #000000;
+    font-family: 'Segoe UI light';
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 27px;
+    left: 130px;
+    position: absolute;
+    width: auto;
+    top: 140px;
+}
+
+.box-1 img {
+    left: 118px;
+    position: absolute;
+    width: auto;
+    top: 52px;
+}
+
+.box-2 img {
+    left: 136px;
+    position: absolute;
+    width: auto;
+    top: 34px;
+}
+
+.box-3 img {
+    left: 136px;
+    position: absolute;
+    width: auto;
+    top: 43px;
+}
+
+
+
+.container-3 {
+    display: flex;   
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    height: 509px;
+    background-image: url(./assets/Layer10copy3@1X.png);
+    position: relative;
+}
+
+
+
+.container-3 h2 { 
+    position: absolute;
+    width: auto;
+    height: 48px;  
+    left: 143px;
+    top: 30px;
+    font-family: 'PT Sans';
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 37px;
+    opacity: 1;
+    font-weight: lighter;
+}
+
+.pic1 {
+    position: relative;
+    left: 139px;
+    width: 341px;
+    height: 233px;
+    top: 110px;
+}
+
+.vid2 {
+    position: absolute;
+    left: 480px;
+    top: 110px;
+    width: 315px;
+    height: 233px;
+}
+
+.vid2[poster] {
+    object-fit:cover;
+}
+
+.vid2-circle {
+    position: absolute;
+    left: 612px;
+    top: 200px;
+    opacity: 0.7215686274509804;
+}
+
+.vid2-play {
+    position: absolute;
+    left: 635px;
+    top: 215px;
+    opacity: 1;
+}
+
+.pic1-text {
+    position: absolute;
+    left: 170px;
+    top: 125px;
+    width: 272px;
+    height: 174px;
+    opacity: 1;
+    color: #FFFFFF;
+    font-family: 'Segoe WP';
+    font-size: 29px;
+    font-weight: lighter;
+}
+
+.twitter {
+    position: absolute;
+    left: 829px;
+    top: 110px;
+    width: 329px;
+    height: 233px;
+}
+
+.twitter-mobile-rec {   
+    display: none;
+}
+
+.twitter-mobile-rec-copy {
+    display: none;
+}
+
+
+.tweet-bubble {
+    display: none;   
+}
+
+.tweet-bubble-half-opacity1 {
+    display: none;   
+
+}
+
+.tweet-bubble-half-opacity2 {
+    display: none; 
+}
+
+.bubble-text1 {
+    display: none;
+    
+}
+
+.bubble-text2 {
+    display: none;
+    
+}
+
+.bubble-text3 {
+    display: none;
+    
+}
+
+.input-text {
+    display: none; 
+}
+
+
+.tweet {
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+.twitter-bird {
+    position: absolute;
+    left: 918px;
+    top: 162px;
+    width: 164px;
+    height: 134px;
+}
+
+.calendar-rec {
+    position: absolute;
+    left: 139px;
+    top: 343px;
+    width: 113px;
+    height: 86px;
+    opacity: 1;    
+}
+
+.day {
+    position: absolute;
+    left: 170px;
+    top: 357px;
+    width: 55px;
+    height: 38px;
+    opacity: 1;  
+    color: #FFFFFF; 
+    font-family: 'Segoe UI'; 
+    font-size: 51px;
+}
+
+.month {
+    position: absolute;
+    left: 171px;
+    top: 403px;
+    width: 55px;
+    height: 15px;
+    opacity: 1; 
+}
+
+.plus1 {
+    position: absolute;
+    left: 454px;
+    top: 317px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.7019607843137254;
+    color: #FFFFFF;
+}
+
+.plus1:hover {
+    width: 14px;
+    height: 14px;
+}
+
+.plus2 {
+    position: absolute;
+    left: 1133px;
+    top: 317px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.7019607843137254;
+    color: #FFFFFF;
+}
+
+.plus2:hover {
+    width: 14px;
+    height: 14px;
+}
+
+.num {
+    position: absolute;
+    left: 1115px;
+    top: 127px;
+    width: 24px;
+    height: 18px;
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.slider-full {
+    position: absolute;
+    left: 212px;
+    top: 472px;
+    width: 897px;
+    height: 16px;
+    opacity: 1;
+    
+}
+
+.slider-marker {
+    position: absolute;
+    left: 459px;
+    top: 472px;
+    width: 198px;
+    height: 16px;
+    opacity: 1;
+}
+
+.container-4 {
+    display: flex;   
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    height: 499px;
+    background-image: url(./assets/cont4back@1X.png);
+    position: relative;
+}
+
+.cont4-h2 {
+    position: absolute;
+    left: 353px;
+    top: 40px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    color: #F5C506;
+    font-family: 'PT Sans';
+    font-size: 43px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.monitor {
+    left: 158px;
+    top: 160px;
+    width: auto;
+    height: auto;
+    opacity: 0.5686274509803921;
+    position: absolute;
+
+}
+
+.tablet {
+    left: 505px;
+    top: 202px;
+    width: auto;
+    height: auto;
+    opacity: 0.47058823529411764;
+    position: absolute;
+}
+
+.phone {
+    left: 659px;
+    top: 311px;
+    width: auto;
+    height: auto;
+    opacity: 0.5686274509803921;
+    position: absolute;
+}
+
+.sale {
+    left: 137px;
+    top: 111px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    position: absolute;
+}
+
+.container-4 h6 {
+    left: 145px;
+    top: 161px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    color: #FFFFFF;
+    font-family: 'PT Sans';
+    font-size: 15px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.bullet1 {
+    left: 777px;
+    top: 201px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    color: #F5C506;
+    position: absolute;
+}
+
+.bullet2 {
+    left: 777px;
+    top: 251px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    color: #F5C506;
+    position: absolute;
+}
+
+.bullet3 {
+    left: 777px;
+    top: 317px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    color: #F5C506;
+    position: absolute;
+}
+
+.bullet4 {
+    left: 777px;
+    top: 368px;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    color: #F5C506;
+    position: absolute;
+}
+
+.bullet1-text {
+    left: 812px;
+    top:  194px;
+    width: 313px;
+    height: 22px;
+    opacity: 1;
+    color: #A9A9A7;
+    font-family: 'PT Sans';
+    font-size: 22px;
+    position: absolute;
+    font-weight: lighter;
+}
+
+.bullet2-text {
+    left: 812px;
+    top:  244px;
+    width: 313px;
+    height: 22px;
+    opacity: 1;
+    color: #A9A9A7;
+    font-family: 'PT Sans';
+    font-size: 22px;
+    position: absolute;
+    font-weight: lighter;
+}
+
+.bullet3-text {
+    left: 812px;
+    top:  310px;
+    width: 313px;
+    height: 22px;
+    opacity: 1;
+    color: #A9A9A7;
+    font-family: 'PT Sans';
+    font-size: 22px;
+    position: absolute;
+    font-weight: lighter;
+}
+
+.bullet4-text {
+    left: 812px;
+    top:  361px;
+    width: 313px;
+    height: 22px;
+    opacity: 1;
+    color: #A9A9A7;
+    font-family: 'PT Sans';
+    font-size: 22px;
+    position: absolute;
+    font-weight: lighter;
+}
+
+.footer-container {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    height: 64px;
+    background-image: url(./assets/footer-bg@1X.png);
+    box-shadow:  0px -3px 5px rgb(12, 11, 11);
+}
+
+
+
+.logo-back-footer {
+       
+    bottom: 51px;
+    opacity: 1;
+    position: absolute;
+    left: 140PX;
+    top: 6px;
+
+}
+
+.logo-front-footer {
+    left: 140PX;
+    top: 4px;
+    opacity: 1;
+    position: absolute;    
+}
+
+.logo-text-footer {      
+    font-family: 'Lucida';
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: lighter;
+    position: absolute;
+    left: 203px;
+    top: 18px;
+}
+
+.footer-logo-and-text {
+    width: 100%;
+}
